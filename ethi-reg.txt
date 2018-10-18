@@ -1,0 +1,48 @@
+[latex]\begin{math}...\end{math}[/latex]
+[$]...[/$]
+
+[latex]\begin{displaymath}...\end{displaymath}[/latex]
+[$$]...[/$$]
+
+[latex]
+\theoremstyle{definition}
+\begin{definition}{Alphabet}
+...
+\end{definition}
+[/latex]
+
+\textbf{Alphabet}
+
+---
+[latex]Was ist ein Alphabet?[/latex]
+
+[latex]
+\theoremstyle{definition}
+\begin{definition}{Alphabet}
+Ein \textbf{Alphabet} ist eine geordnete endliche Menge $\Sigma$ von \textbf{Zeichen} $a_i$
+$$ \Sigma=\left \{a_1,...,a_m\right \}, m \geq 1 $$
+\end{definition}
+[/latex]
+
+---
+[latex]Was ist ein Wort?[/latex]
+
+[latex]
+\theoremstyle{definition}
+\begin{definition}{Wort}
+Ein \textbf{Wort} ist eine Folge $x = x1 . . . xn \in \Sigma^n, n \geq 1$ von Zeichen
+\end{definition}
+[/latex]
+
+
+
+
+
+
+
+
+
+
+
+
+

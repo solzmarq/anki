@@ -1,0 +1,111 @@
+\documentclass[12pt]{article}
+\special{papersize=3in,5in}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb,amsmath,amsfonts,mathrsfs, lmodern, textcomp}
+\usepackage{amsthm}
+\usepackage{xcolor}
+\usepackage{lipsum} % dummy text for the MWE
+\usepackage{enumitem}
+\usepackage[ampersand]{easylist}
+\usepackage{tikz}
+\usetikzlibrary{tikzmark,calc,decorations.pathreplacing,automata,positioning,arrows}
+
+% Select what to do with todonotes: 
+% \usepackage[disable]{todonotes} % notes not showed
+\usepackage[draft]{todonotes}   % notes showed
+
+% Select what to do with command \comment:  
+% \newcommand{\comment}[1]{}  %comment not showed
+\newcommand{\comment}[1]{\par {\bfseries \color{blue} #1 \par}} %comment showed
+
+\pagestyle{empty}
+\setlength{\parindent}{0in}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollar}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+ 
+\begin{document} 
+% Alphabet
+Was ist ein Alphabet?
+
+\theoremstyle{definition}
+\begin{definition}{Alphabet}
+Ein \textbf{Alphabet} ist eine geordnete endliche Menge $\Sigma$ von \textbf{Zeichen} $a_i$
+$$ \Sigma=\left \{a_1,\cdots,a_m\right \}, m \geq 1 $$
+\end{definition}
+
+% Wort
+Was ist ein Wort?
+
+\theoremstyle{definition}
+\begin{definition}{Wort}
+Ein \textbf{Wort} ist eine Folge $x = x1\cdots x_n \in \Sigma^n, n \geq 1$ von Zeichen
+\end{definition}
+
+% Länge Wort
+Wie ist die Länge eines Wortes definiert?
+
+\theoremstyle{definition}
+\begin{definition}{Länge eines Wortes}
+Die \textbf{Länge} eines Wortes $x$ mit $x = x1\cdots x_n \in \Sigma^n, n \geq 1$ ist $n$ und wird mit $|x|$ bezeichnet
+\end{definition}
+
+% Menge aller Wörter
+Wie ist die Menge aller Wörter über einem Alphabet definiert?
+
+\begin{definition}{Menge aller Wörter über Alphabet}
+Die Menge aller Wörter über $\Sigma$ ist $\mathbf{\Sigma^*}$:
+$$\Sigma^* = \bigcup_{n \geq 0} \Sigma^n, n \in \mathbb{N} $$
+\end{definition}
+
+% Leere Wort
+Wie ist das leere Wort definiert?
+
+\begin{definition}{Leere Wort}
+Das \textbf{leere Wort} $\epsilon$ ist das (einzige) Wort der Länge $n = 0$, d.h. $$\Sigma^0 = \{ \epsilon\}$$.
+\end{definition}
+
+% Sprache
+Wie ist Sprache definiert?
+
+\begin{definition}{Sprache}
+Eine Sprache ist jede Teilmenge $L$ über dem Alphabet $\Sigma$
+$$ L \subseteq \Sigma^* $$
+\end{definition}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document} % End document
